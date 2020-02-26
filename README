@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // How to find the average acceleration from v0, v1, and t
+    // v0, v1, t: 5.5, 50.9, 4.5
+
+    // Enter a value for initial velocity in meters per second (m/s)
+    double v0;
+    cout << "Enter a value for initial velocity in m/s: ";
+    cin >> v0;
+
+    // Enter a value for final velocity in meters per second (m/s)
+    double v1;
+    cout << "Enter a value for final velocity in m/s: ";
+    cin >> v1;
+
+    // Enter a value for time in seconds (s);
+    double t;
+    cout << "Enter a value for time in s: ";
+    cin >> t;
+
+    // Compute a value for average acceleration
+    double a = (v1 - v0) / t;
+    cout << "Average acceleration= " << a << " m/s^2" << endl;
+    
+    return 0;
+}
